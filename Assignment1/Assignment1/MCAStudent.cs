@@ -16,9 +16,9 @@ namespace Assignment1
             Console.WriteLine("How many subjects");
             student.noOfSubjects = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < student.noOfSubjects; i++)
+            for (int i = 1; i <= student.noOfSubjects; i++)
             {
-                Console.WriteLine($"Enter Marks for subject1{0}:", i);
+                Console.WriteLine(String.Format("Enter Marks for subject {0} Out of 100:", i));
                 list.Add(Convert.ToInt32(Convert.ToInt32(Console.ReadLine())));
             }
             student.total = list.Sum();
